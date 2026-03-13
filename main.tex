@@ -1,0 +1,402 @@
+%
+% Academic CV - Abdul Mobin Ibna Hafiz
+% Based on template by Dubasi Pavan Kumar (MIT License)
+%
+\documentclass[a4paper,11pt]{article}
+
+% Package imports
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+
+% Color definitions
+\definecolor{darkblue}{RGB}{0,0,139}
+
+% Page layout
+\setlength{\multicolsep}{0pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[L]{\small Abdul Mobin Ibna Hafiz}
+\fancyfoot[R]{\small \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\setlength{\footskip}{5pt}
+
+% Hyperlink setup
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,
+    urlcolor=darkblue,
+}
+
+% Custom box settings
+\usepackage[most]{tcolorbox}
+\tcbset{
+    frame code={},
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!20,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=-2mm,
+    boxsep=4pt,
+    arc=0pt,outer arc=0pt,
+}
+
+% URL style
+\urlstyle{same}
+
+% Text alignment
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
+
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+% Font
+\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont} % Palatino
+
+\begin{document}
+\headerfontiii
+
+% ==================== HEADER ====================
+\begin{center}
+    {\Huge\textbf{Abdul Mobin Ibna Hafiz}}
+\end{center}
+\vspace{-5mm}
+\begin{center}
+    \small{
+    Ph.D. Candidate and Graduate Research Assistant\\
+    Civil and Environmental Engineering, Florida State University, Tallahassee, FL 32301
+    }
+\end{center}
+\vspace{-4mm}
+\begin{center}
+    \small{
+    \href{mailto:your-email@fsu.edu}{your-email@fsu.edu}
+    }
+\end{center}
+\vspace{-5mm}
+\begin{center}
+    \small{
+    \href{https://your-linkedin-url}{LinkedIn} $|$
+    \href{https://your-portfolio-url}{Portfolio} $|$
+    \href{https://your-google-scholar-url}{Google Scholar} $|$
+    \href{https://your-researchgate-url}{ResearchGate}
+    }
+\end{center}
+\vspace{-4mm}
+
+% ==================== RESEARCH INTERESTS ====================
+\section{\textbf{Research Interests}}
+\vspace{1mm}
+\small{
+Microplastic transport modeling; Environmental pollutant fate and transport; Statistical, machine learning, and process-based integrated hybrid modeling; Water quality modeling; Urban stormwater management; Climate change impacts on water resources
+}
+\vspace{-2mm}
+
+% ==================== EDUCATION ====================
+\section{\textbf{Education}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Florida State University}{Tallahassee, FL}
+{Doctor of Philosophy in Civil and Environmental Engineering}{August 2023 -- Present}
+\resumeSubheading
+{Bangladesh University of Engineering and Technology (BUET)}{Dhaka, Bangladesh}
+{Bachelor of Science in Civil Engineering}{February 2016 -- February 2021}
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+% ==================== WORK EXPERIENCE ====================
+\section{\textbf{Work Experience}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Graduate Research Assistant}{Tallahassee, FL}
+{\href{https://rider.eng.famu.fsu.edu/}{Resilient Infrastructure and Disaster Response (RIDER) Center}, FAMU-FSU College of Engineering}{August 2023 -- Present}
+\resumeSubheading
+{Research Associate}{Dhaka, Bangladesh}
+{\href{https://livingdeltas.org/}{UKRI -- GCRF Living Deltas Hub}, \href{https://iwfm.buet.ac.bd/site/}{Institute of Water and Flood Management (IWFM)}, BUET}{November 2021 -- June 2023}
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+% ==================== FUNDED RESEARCH ====================
+\section{\textbf{Funded Research}}
+\vspace{1mm}
+\small{
+\begin{enumerate}[leftmargin=*, labelsep=0.5em, itemsep=4mm]
+
+\item \textbf{RAPID: Short- and mid-term dynamics of microplastic transport in urban drainage systems after Hurricane Debby}\\
+\textit{Role:} Project Scientist (Contributed to sample collection and proposal development)\\
+\textit{Funding Agency:} National Science Foundation (NSF)\\
+\textit{Award Number:} 2446126\\
+\textit{Total Awarded Budget:} \$200,000 (1 year)\\
+\textit{PI:} Dr.\ Ebrahim Ahmadisharaf; \textit{Co-PI:} Maryam Salehi
+
+\item \textbf{Tracking historical changes in vegetation across Seminole Tribe of Florida}\\
+\textit{Role:} Contributed to Proposal Development\\
+\textit{Funding Agency:} FSU Provost's Public Research Impact Grant (PPIRG)\\
+\textit{Period:} February 2026 -- July 2026
+
+\end{enumerate}
+}
+\vspace{-2mm}
+
+% ==================== PUBLICATIONS ====================
+\section{\textbf{Publications}}
+\vspace{1mm}
+
+% --- Under Review / In Preparation ---
+\textbf{\textit{Under Review / In Preparation}}
+\vspace{1mm}
+\small{
+\begin{enumerate}[leftmargin=*, labelsep=0.5em, itemsep=1.5mm]
+
+\item \textbf{Ibna Hafiz, A.M.}, Ahmadisharaf, E., Salehi, M. ``A global-scale deep learning model to predict microplastic concentration in marine environments.'' \textit{Nature Water} (In Review).
+
+\item \textbf{Ibna Hafiz, A.M.}, Ahmadisharaf, E., Salehi, M. ``A predictive model to estimate microplastic flux in urban environments.'' \textit{Water Research} (In Review).
+
+\item \textbf{Ibna Hafiz, A.M.}, Zolfaghari, S., Bashir, A., Ahmadisharaf, E., Salehi, M. ``Impacts of Hurricane Debby on microplastic characteristics in urban drainage networks.'' \textit{Water Research} (In Review).
+
+\item \textbf{Ibna Hafiz, A.M.}, Datta, D.K., Bashir, A., Ahmadisharaf, E., Salehi, M. ``Microplastic characteristics in urban agriculture under various weather patterns.'' \textit{Water Research} (In Review).
+
+\item \textbf{Ibna Hafiz, A.M.}, Rabby, S.H., Ahmadisharaf, E., Sridharan, V., Kumar, S., Zhang, H.X., Chao, X., Guzman, S., Quinn, N.W.T. ``Opportunities to improve TMDLs using artificial intelligence and machine learning.'' \textit{Journal of Environmental Engineering} (In Review).
+
+\item \textbf{Ibna Hafiz, A.M.}, Ahmadisharaf, E., Salehi, M., van Emmerik, T.H.M., Farner, J., Galloway, T., White, J.C., Zhang, Y., Han, N., Zongguo, W. ``A Global Dataset of Microplastics in Urban Stormwater Runoff (2018--2024).'' \textit{Nature Scientific Data} (In Review).
+
+\item Rabby, S.H., Ahmadisharaf, E., Khan, M.I.S., \textbf{Ibna Hafiz, A.M.}, Sun, X., Cohen, M., Rains, M., Van Emmerik, T.V., Salehi, M., Kranz, S., Wahl, T., Mishra, A., Sadegh, M., AghaKouchak, A., Golden, H., Moradkhani, H. ``Impacts of compound hydroclimatic events on coastal water quality.'' (In Preparation).
+
+\end{enumerate}
+}
+\vspace{1mm}
+
+% --- Journal Articles ---
+\textbf{\textit{Journal Articles}}
+\vspace{1mm}
+\small{
+\begin{enumerate}[leftmargin=*, labelsep=0.5em, itemsep=1.5mm]
+
+\item \textbf{Ibna Hafiz, A.M.}, Ahmadisharaf, E., Salehi, M., Farner, J., White, J.C., Zeng, E.Y., \& Nazari, B. (2025). ``A Review of Processes and Models for the Export of Microplastics From Terrestrial to Aquatic Systems.'' \textit{WIREs Water}, 12(1), e70004. \href{https://doi.org/10.1002/wat2.70004}{https://doi.org/10.1002/wat2.70004}
+
+\item \textbf{Ibna Hafiz, A.M.} (2023). ``Intergenerational research on environmental change (Bangladesh, Asia).'' In Oral History Society, International work. \textit{Oral History}, 51(1), 34--41. \href{https://www.jstor.org/stable/10.2307/48743712}{https://www.jstor.org/stable/10.2307/48743712}
+
+\end{enumerate}
+}
+\vspace{1mm}
+
+% --- Book Chapters ---
+\textbf{\textit{Book Chapters}}
+\vspace{1mm}
+\small{
+\begin{enumerate}[leftmargin=*, labelsep=0.5em, itemsep=1.5mm]
+
+\item Rabby, S.H., Sun, X., \textbf{Ibna Hafiz, A.M.}, Yan, Z., Imtiaz, S.U., Azadani, M.N., Pakdehi, M., Moumouni, A.S., Ahmadisharaf, E., \& Alamdari, N. (2026). ``Chapter 11---Application of machine learning methods in water quality modeling.'' In Z. Lin \& W.-C. Chou (Eds.), \textit{Machine Learning and Artificial Intelligence in Toxicology and Environmental Health} (pp. 271--309). Academic Press. \href{https://doi.org/10.1016/B978-0-443-30010-3.00016-7}{https://doi.org/10.1016/B978-0-443-30010-3.00016-7}
+
+\item Salehi, M., \textbf{Hafiz, A.M.I.}, Ahmadisharaf, E., Jazaei, F. (2025). ``Release of Microplastics by Terrestrial Sources into Freshwater Environments.'' In: Bala, K., Nogueira, R., Darbha, G.K., Weichgrebe, D. (eds) \textit{Occurrence, Detection, and Fate of Microplastics in Freshwater Ecosystems}. Springer, Singapore. \href{https://doi.org/10.1007/978-981-95-0225-7_2}{https://doi.org/10.1007/978-981-95-0225-7\_2}
+
+\end{enumerate}
+}
+\vspace{1mm}
+
+% --- Conference Proceedings ---
+\textbf{\textit{Conference Proceedings}}
+\vspace{1mm}
+\small{
+\begin{enumerate}[leftmargin=*, labelsep=0.5em, itemsep=1.5mm]
+
+\item \textbf{Ibna Hafiz, A.M.}, Greru, C., Warrington, S. (2022). ``Oral History, Mapping and Photography in the Bangladesh Sundarbans.'' \textit{Living Deltas Hub}. \href{https://livingdeltas.org/blog/oral-history-mapping-and-photography-in-the-bangladesh-sundarbans}{livingdeltas.org}
+
+\item Pantho, M.J., Ishmam, Z.S., \textbf{Ibna Hafiz, A.M.}, Rahman, M.M. (2022). ``NDVI: Detection of vegetation change using Remote Sensing and GIS. A study of Barishal City Corporation, Bangladesh.'' \textit{6th International Conference on Civil Engineering for Sustainable Development (ICCESD)}.
+
+\item \textbf{Ibna Hafiz, A.M.}, Billah, M. (2021). ``Treatment of Raw Textile Effluent using Hybrid Constructed Wetland.'' \textit{International Conference on Water and Flood Management (ICWFM)}, 2021.
+
+\end{enumerate}
+}
+\vspace{-2mm}
+
+% ==================== PRESENTATIONS ====================
+\section{\textbf{Presentations}}
+\vspace{1mm}
+
+\textbf{\textit{Oral Presentations}}
+\vspace{1mm}
+\small{
+\begin{enumerate}[leftmargin=*, labelsep=0.5em, itemsep=1.5mm]
+
+\item \textbf{Ibna Hafiz, A.M.}, Ahmadisharaf, E., Salehi, M., Feng, D., Abdolali, A. (2026). ``Satellite-based microplastic detection in marine environments using machine learning algorithms.'' \textit{IEEE International Geoscience and Remote Sensing Symposium (IGARSS)}, Washington, DC.
+
+\item \textbf{Ibna Hafiz, A.M.}, Jalilvand, E., Ahmadisharaf, E. (2026). ``Deep learning-based land cover change detection following Hurricane Michael using high-resolution multi-temporal satellite imagery.'' \textit{IEEE International Geoscience and Remote Sensing Symposium (IGARSS)}, Washington, DC.
+
+\item \textbf{Ibna Hafiz, A.M.}, Salehi, M., Ahmadisharaf, E. (2026). ``Standardizing microplastic data in urban runoff: Development and applications of the DURUM database.'' \textit{EWRI World Environmental \& Water Resources Congress}, Mobile, AL.
+
+\item \textbf{Ibna Hafiz, A.M.}, Ahmadisharaf, E., Salehi, M., Feng, D. (2025). ``Satellite-Based Marine Microplastic Detection Using Machine Learning Algorithms.'' \textit{AGU Annual Meeting 2025}, New Orleans, LA.
+
+\item \textbf{Ibna Hafiz, A.M.}, Bashir, A., Zolfaghari, S., Legrand, F., Ahmadisharaf, E., Salehi, M. (2025). ``Hurricane-Induced Microplastics Contamination in Urban Drainage Systems: A Case Study of Tallahassee following Hurricane Debby.'' \textit{EWRI Congress 2025}, Anchorage, AK.
+
+\item \textbf{Ibna Hafiz, A.M.}, Bashir, A., Legrand, F., Ahmadisharaf, E., Salehi, M. (2025). ``Microplastic Transport in Urban Agricultural Systems: Characterization, Drivers, and Implications for Stormwater Management.'' \textit{EWRI Congress 2025}, Anchorage, AK.
+
+\item \textbf{Ibna Hafiz, A.M.}, Ahmadisharaf, E., Salehi, M. (2024). ``The Export of Microplastics to Urban Agricultural Farms Under Different Weather Patterns.'' \textit{Leon County Science Advisory Committee meeting}, 2024.
+
+\end{enumerate}
+}
+\vspace{1mm}
+
+\textbf{\textit{Poster Presentations}}
+\vspace{1mm}
+\small{
+\begin{enumerate}[leftmargin=*, labelsep=0.5em, itemsep=1.5mm]
+
+\item Zolfaghari, S., \textbf{Ibna Hafiz, A.M.}, Ahmadisharaf, E., Salehi, M. (2025). ``Short- and mid-term impacts of Hurricane Debby on microplastic pollution in urban drainage systems of Tallahassee, Florida.'' \textit{ACS Midwest Regional Meeting}, Columbia, MO.
+
+\item \textbf{Ibna Hafiz, A.M.}, Ahmadisharaf, E., Salehi, M. (2024). ``The Role of Microplastic Transport in Enhancing Stormwater Management.'' \textit{Florida Stormwater Association Winter Conference}, 2024, Kissimmee, FL.
+
+\item \textbf{Ibna Hafiz, A.M.}, Ahmadisharaf, E., Jalilvand, E. (2024). ``Changes in Land Cover Aftermath of Hurricane Events: The case of Hurricane Michael.'' \textit{AGU Chapman Conference on Remote Sensing of the Water Cycle: Sensors to Science to Society}, 2024, Honolulu, HI.
+
+\end{enumerate}
+}
+\vspace{-2mm}
+
+% ==================== AWARDS AND RECOGNITIONS ====================
+\section{\textbf{Awards and Recognitions}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\item \textbf{CEE Graduate Student Research Excellence Poster Competition (Fall 2025)} -- First Prize.
+
+\item \textbf{CEE Graduate Research Excellence Award} (2025) -- \$1,000.
+
+\item \textbf{\href{https://placeholder-poster-competition-link}{CEE Graduate Research Excellence Poster Competition} (Spring 2025)} -- Winner (Second Prize -- \$3,000).
+
+\item \textbf{\href{https://placeholder-fsa-scholarship-link}{2024 Florida Stormwater Association Educational Foundation Scholarship}} (\$2,000).
+
+\item \textbf{Travel grant} (\$1,300) for the \textit{\href{https://placeholder-agu-chapman-link}{AGU Chapman Conference on Remote Sensing of the Water Cycle: Sensors to Society}}, 2024, Honolulu, HI.
+
+\item \textbf{Florida State University Graduate School \href{https://placeholder-drg-link}{Dissertation Research Grant}} (\$1,000).
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+% ==================== PROFESSIONAL SERVICES ====================
+\section{\textbf{Professional Services}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\item Member (Elect), \href{https://placeholder-ewri-tmdl-link}{EWRI-TMDL Analysis and Modeling Task Committee} (November 2024 -- Present).
+
+\item Session Convener, 2025 World Environmental \& Water Resources Congress, Anchorage, Alaska.
+
+\item Abstract Reviewer, 2026 World Environmental \& Water Resources Congress, Mobile, Alabama.
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+% ==================== TECHNICAL SKILLS ====================
+\section{\textbf{Technical Skills}}
+\vspace{-0.4mm}
+\resumeHeadingSkillStart
+\resumeSubItem{Programming \& Analysis:}
+{Python, MATLAB}
+\resumeSubItem{Geospatial \& Modeling:}
+{ArcGIS, Google Earth Engine, SWMM, HEC-RAS, AutoCAD}
+\resumeSubItem{Visualization \& Scientific Tools:}
+{Origin, PyMOL, Adobe Illustrator}
+\resumeSubItem{Documentation:}
+{LaTeX, MS Office}
+\resumeHeadingSkillEnd
+
+% ==================== MEDIA AND FEATURES ====================
+\section{\textbf{Media and Features}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\item \href{https://placeholder-grad-impact-link}{Grad Impact Profile} -- \textbf{\textit{Office of Graduate Fellowship and Awards}}
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+% ==================== REFERENCES ====================
+\section{\textbf{References}}
+\vspace{1mm}
+\small{
+\begin{enumerate}[leftmargin=*,labelsep=2mm]
+
+\item \textbf{Dr.\ Ebrahim Ahmadisharaf}\\
+   Assistant Professor, Department of Civil \& Environmental Engineering,\\
+   FAMU-FSU College of Engineering, Tallahassee, FL 32306, United States.\\
+   Email: \href{mailto:eahmadisharaf@eng.famu.fsu.edu}{eahmadisharaf@eng.famu.fsu.edu}
+
+\item \textbf{Dr.\ Maryam Salehi}\\
+   Associate Professor, Civil and Environmental Engineering,\\
+   College of Engineering, University of Missouri, MO 65211, United States.\\
+   Email: \href{mailto:mshfp@missouri.edu}{mshfp@missouri.edu}
+
+\item \textbf{Dr.\ Jeffrey Farner}\\
+   Assistant Professor, Department of Civil and Environmental Engineering,\\
+   FAMU-FSU College of Engineering, Tallahassee, FL 32306, United States.\\
+   Email: \href{mailto:jfarner@eng.famu.fsu.edu}{jfarner@eng.famu.fsu.edu}
+
+\end{enumerate}
+}
+
+\end{document}
